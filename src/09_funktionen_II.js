@@ -19,10 +19,10 @@ output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
 
-	if (b !== 0) {
-		return a / b;
+	if (b == 0) {
+		return "Error: Divided by 0!"; // Ausnahme
 	} else {
-		return "Error: Divided by 0!";
+		return a / b; // Regel
 	}
    
 }
