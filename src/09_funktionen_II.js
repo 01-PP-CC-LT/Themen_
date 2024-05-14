@@ -10,21 +10,21 @@
 4. Ausgabe in Konsole : check!
 */
 
+const ERROR_STR_DIV = "Division durch 0 nicht möglich!"
+
 // module: multiplication a * b |  test:
-// output(divide(4,2));
-// output(divide(3,2));
-// output(divide(3,-2));
+output(divide(4,2));
+output(divide(3,2));
+output(divide(3,-2));
 output(divide(0,2));
 output(divide(3,0));
 output(divide(0,0));
 function divide(a,b) {
-
 	if (b == 0) {
-		return "Error: Divided by 0!"; // Ausnahme
-	} else {
-		return a / b; // Regel
-	}
-   
+		return ERROR_STR_DIV; // Ausnahme
+	} 
+	
+	return a / b; // Regel
 }
 
 // module: multiplication a * b |  test:
