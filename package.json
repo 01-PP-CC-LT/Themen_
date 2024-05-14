@@ -2,7 +2,7 @@
   "name": "themen_01",
   "version": "1.0.0",
   "description": "## Setup Programmierumgebung",
-  "main": "src/07_codechallenge_II.js",
+  "main": "src/09_funktionen_II.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
