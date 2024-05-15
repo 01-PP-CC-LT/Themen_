@@ -86,13 +86,10 @@ hier: Verkettung eines Strings // Transponierung
 //    output("inhalt von a: " + a);
 // }
 
-
-
 /**
  *   PRAXIS
  * 
  */
-
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
@@ -154,16 +151,16 @@ function getSentenceArr2(arr) {
 
     // return str;
 
-    // 2. Variante: Struktur erzeugen + trimmen()
-    for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
-    {
-        str += arr[i] + GAP; // Regel
-    }
+    // // 2. Variante: Struktur erzeugen + trimmen()
+    // for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
+    // {
+    //     str += arr[i] + GAP; // Regel
+    // }
 
-    return str.trim() + PUNCT;
+    // return str.trim() + PUNCT;
 
-
-
+    // 3. Variante: Ausnutzen von generischen Fuktionen ...
+    return arr.join(GAP) + PUNCT;
 
 }
 
