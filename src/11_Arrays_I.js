@@ -8,15 +8,15 @@
 
 /*** 02. Theorie: Array */
 
-let arr;
-//arr = new Array(); // Konstruktor
-// arr = [];
-arr = [2,11,7,8,10]  // Array mit Elementen
+// let arr;
+// //arr = new Array(); // Konstruktor
+// // arr = [];
+// arr = [2,11,7,8,10]  // Array mit Elementen
 
-output(arr); 
-output(arr.length); // Anzahl der Elemente
-output(arr[0]) // Index 0 (1. Pos. im Array)
-output(arr[arr.length-1]) // letze Pos. // allgemein .. n-1
+// output(arr); 
+// output(arr.length); // Anzahl der Elemente
+// output(arr[0]) // Index 0 (1. Pos. im Array)
+// output(arr[arr.length-1]) // letze Pos. // allgemein .. n-1
 
 
 
@@ -41,6 +41,26 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
                 word4 + GAP +
                 word5 + GAP +
                 word6 +
+                PUNCT;
+
+    return str;
+}
+
+/*** 01a. Funktionalität mit Array 1 */
+// Kritik | Überlegung
+// word1,word2, .... wordN :: Semantische Struktur
+// arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
+// --> Transformation semantisches Problem --> numerisches Problem
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =   arr[0] + GAP +
+                arr[1] + GAP +
+                arr[2] + GAP +
+                arr[3] + GAP +
+                arr[4] + GAP +
+                arr[5] +
                 PUNCT;
 
     return str;
