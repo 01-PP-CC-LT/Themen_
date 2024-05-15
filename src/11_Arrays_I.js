@@ -18,6 +18,35 @@
 // output(arr[0]) // Index 0 (1. Pos. im Array)
 // output(arr[arr.length-1]) // letze Pos. // allgemein .. n-1
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 0; i < 10; i++)  // i = Schleifenindex
+// {
+//     output("index: " + i);
+// }
+
+// Dekrement (obere Grenze --> untere Grenze)
+// for (let i = 10; i > 0; i--)  // i = Schleifenindex
+// {
+//     output("index: " + i);
+// }
+
+// Inkrement (var. Schrittweite)
+// for (let i = 0; i <= 100; i += 5)  // i = Schleifenindex
+// {
+//     output("index: " + i);
+// }
+
+
+
+
+
+
+
+
+
 
 
 
