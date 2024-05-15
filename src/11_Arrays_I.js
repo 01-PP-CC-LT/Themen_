@@ -68,14 +68,23 @@ hier: Aufsummierung
 
 /* Besser: mit FOR-Schleife */
 
-let a = 0; // Anfangswert
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 5; i++) {
+//    a = a + 1;
+//    output("inhalt von a: " + a);
+// }
+
+/*
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+Solange die Variable existiert, bleibt dieser erhalten
+hier: Verkettung eines Strings // Transponierung
+*/
+
+let a = ""; // Anfangswert - leerer String
 for (let i = 0; i < 5; i++) {
-   a = a + 1;
+   a = a + "Test";
    output("inhalt von a: " + a);
 }
-
-
-
 
 
 
