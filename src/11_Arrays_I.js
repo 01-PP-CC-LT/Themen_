@@ -142,16 +142,28 @@ function getSentenceArr2(arr) {
     const PUNCT = ".";
     let str = "";
 
-    // 1. Variante: Struktur GENAU erzeugen ...
+    // // 1. Variante: Struktur GENAU erzeugen ...
+    // for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
+    // {
+    //     if (i == arr.length-1) {
+    //         str += arr[i] + PUNCT; // Ausnahme 
+    //     } else {
+    //         str += arr[i] + GAP; // Regel
+    //     }
+    // }
+
+    // return str;
+
+    // 2. Variante: Struktur erzeugen + trimmen()
     for (let i = 0; i < arr.length; i++)  // i = Schleifenindex
     {
-        if (i == arr.length-1) {
-            str += arr[i] + PUNCT; // Ausnahme 
-        } else {
-            str += arr[i] + GAP; // Regel
-        }
+        str += arr[i] + GAP; // Regel
     }
-    return str;
+
+    return str.trim() + PUNCT;
+
+
+
 
 }
 
