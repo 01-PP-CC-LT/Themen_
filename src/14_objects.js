@@ -55,6 +55,26 @@ let person = {
 
 // output(person.sayHello());
 
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
+
+let baikal = {
+                value: "10m",
+                deep: {
+                        deeper:{
+                                deepest: "Das Licht - auf 1642m!",
+                                temperature: "4 Grad Celsius" 
+                        }
+                }
+};
+
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
+output(baikal.deep.deeper.temperature);
+
 
 // Modul: Ausgabe | Test
 //output("hi");
